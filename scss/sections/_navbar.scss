@@ -1,0 +1,32 @@
+@use '../custom' as *;
+
+.menu {
+
+    .navbar-brand {
+        font-family: $brand-font-family;
+        font-weight: $brand-font-weight;
+        line-height: $brand-line-height;
+        color: $brand-color;
+        margin-right: 66px;
+
+
+        @include media-breakpoint-up(md) {
+            font-size: $font-size-lg;
+        }
+    }
+
+    .navbar-nav {
+
+        max-width: $navbar-menu-max-width;
+        justify-content: space-between;
+
+        .nav-link {
+            color: $gray-900;
+        }
+    }
+
+    li {
+        padding: 0 0.7rem;
+
+    }
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Happiness Subscription</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- 
+      Navbar 
+    -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white menu">
+        <div class="container">
+          <a class="navbar-brand" href="#home">The Happiness Subscription</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="#features">What is it About?</a>
+              <a class="nav-link" href="#cta" title="Get Invited">Get Invited</a>
+              <a class="nav-link" href="#testimonials" title="Testimonials">Testimonials</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+    <!-- 
+      Hero 
+    -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Improve Your Happiness. <br /> One Spending At A Time.</h1>
+            <a class="btn btn-arrow hero-cta" href="#cta" title="Get Happier">Get Happier Now</a>
+          </div>
+          <div class="col-md-6 product-image text-center mb-5">
+            <img src="assets/images/happiness_subscription_preview.png" alt="The Happiness Subscription App Screen" class="app-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- 
+      Features 
+    -->
+    <section id="features" class="feature-section">
+      <div class="container">
+        <div class="row feature-heading">
+          <div class="col-md-3"></div>
+          <div class="col-md-6 text-center">
+          <h2>What is it About?</h2>
+          <p class="lead-1">
+            The Happiness Subscription uses your financial data to help you become happier. Learn about yourself, your spendings and what it means to run a happy financial life.
+          </p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-3 g-3">
+          <div class="col">
+            <div class="feature">
+              <span class="feature-icon">📈</span>
+              <h4 class="display-4">Happiness Score</h4>
+              <p>
+                Based on your spending behaviour, you can gain a science-based score on how happy you are. Grasp the statistics behind it. No manual input is needed.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature">
+              <span class="feature-icon">💰</span>
+              <h4 class="display-4">Financial Happiness</h4>
+              <p>
+                Receive personalised financial recommendations to improve your happiness, no matter how happy you already are! Grow your score by committing to them.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="feature">
+              <span class="feature-icon">🧑‍🎓</span>
+              <h4 class="display-4">Understand Happiness</h4>
+              <p>
+                Become a happiness expert by completing our state-of-the-art happiness course! Join our community and learn about what happiness is! 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+      CTA
+    -->
+    <section id="waitlist" class="cta-section">
+      <div class="container signup">
+        <div class="row">
+          <div class="col-lg-6 cta order-lg-2">
+            <h1 class="mb-4">Get<br /> Happier.</h1>
+            <h4 class="display-4 mb-4">Get your exclusive invitation to our community and tell your friends about us!</h4>
+            <p>Data privacy is very important to us. Your data will not be shared for any other purpose than your interest in our app.</p>
+          </div>
+          <div class="col-lg-6 signup-form">
+            <h4 id="cta" class="display-4 singup-form-header">Welcome to The Happiness Subscription</h4>
+            <form action="https://ylk4f3zecb.execute-api.eu-central-1.amazonaws.com/Prod" method="get">
+              <div class="mb-4">
+                <label class="form-label" for="your-email">Your email<span class="required">*</span></label>
+                <input class="form-control" id="your-email" name="your-email" placeholder="example@mail.com" type="email" required="required" />
+              </div>
+              <div class="mb-4">
+                <label class="form-label" for="refer-us">Refer us to your friends (separate email by comma)</label>
+                <input class="form-control" id="refer-us" name="refer-us" placeholder="your-friend@mail.com, your-other-friend@mail.com" type="text" />
+              </div>
+              <div class="mb-4">
+                <label class="form-label">I’d pay for The Happiness Subscription*</label>
+                <p><small>*No obligation to pay (for research purposes only)</small></p>
+                <div>
+                  <input value="0" type="radio" class="btn-check" name="price" id="optionNo" autocomplete="off">
+                  <label class="btn btn-price-selection" for="optionNo">0</label>
+                  <input value="5" type="radio" class="btn-check" name="price" id="optionFive" autocomplete="off">
+                  <label class="btn btn-price-selection" for="optionFive">5</label>
+                  <input value="10" type="radio" class="btn-check" name="price" id="optionTen" autocomplete="off">
+                  <label class="btn btn-price-selection" for="optionTen">10</label>
+                  <input value="+10" type="radio" class="btn-check" name="price" id="optionMore" autocomplete="off">
+                  <label class="btn btn-price-selection" for="optionMore">More Than 10</label>
+                </div>
+              </div>
+              <div class="mb-4">
+                <button type="submit" class="btn btn-submit">Get an Invite!</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--
+      Testimonials
+    -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="header-testimonials">What Our <br /> Customers Say</h2>
+            <p class="lead-1 lead-testimonials">Get inspired by these stories</p>
+            <div class="testimonial testimonial-1">
+              <p class="testimonial-text">
+                I love their personalised well-being recommendations based on my lifestyle and spending habits. I will continue to subscribe to happiness, and you should too!
+              </p>
+              <p class="testimonial-customer">Linda K., Vienna</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="testimonial testimonial-2">
+              <p class="testimonial-text">
+                The Happiness Subscription has made my financial spending so much fun. It gives me great insights into how some of my spending is not good for my happiness. I highly recommend it!
+              </p>
+              <p class="testimonial-customer">Jan O., Berlin</p>
+            </div>
+            <div class="testimonial testimonial-3">
+              <p class="testimonial-text">
+                I have tried several apps to help me with my financial spending habits. However, The Happiness Subscription is the first app that merges financial spending with happiness. You have the best of both worlds!
+              </p>
+              <p class="testimonial-customer">Pierre G., Paris</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 
+      Footer 
+    -->
+    <footer id="footer" class="footer-section">
+      <div class="container">
+        <div class="row mb-4">
+          <h3 class="footer-heading">The Happiness Subscription</h3>
+        </div>
+        <div class="row mb-4">
+          <a href="./index.html#cta" title="Get on the waiting list">Get Happier Now</a>
+        </div>
+        <div class="row mb-5">
+          <nav class="nav">
+            <a class="nav-link" title="Start" href="#home">Start</a>
+            <a class="nav-link" title="Features" href="#features">What is it About?</a>
+            <a class="nav-link" title="Get Invited" href="#cta">Get Invited</a>
+            <a class="nav-link" title="Testimonials" href="#testimonials">Testimonials</a>
+            <a class="nav-link" title="Imprint" href="./imprint.html">Imprint</a>
+            <a class="nav-link" title="Privacy Policy" href="./privacy-policy.html">Privacy Policy</a>
+          </nav>
+        </div>
+        <div class="row mb-3">
+          <p>&copy; 2021 WHealth UG. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

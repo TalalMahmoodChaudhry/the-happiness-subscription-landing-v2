@@ -1,0 +1,145 @@
+$white:    #fff;
+$gray-100: #F4F5F7;
+$gray-200: #EEEFF4;
+$gray-300: #D9DBE1;
+$gray-700: #969BAB;
+$gray-800: #474A57;
+$gray-900: #18191F;
+$black:    #000;
+
+$blue:    #0076D1;
+$blue-900: #005CA3;
+$blue-800: $blue;
+$blue-600: #2EA4FF;
+$blue-500: #5CB8FF;
+$blue-400: #85CAFF;
+$blue-300: #AEDCFF;
+
+$red:      #F02B0C;
+$red-600:  #C4230A;
+$red-500:  $red;
+$red-400:  #F54B30;
+$red-300:  #F76D57;
+
+$green:     #0BB84D;
+$green-600: #088D3B;
+$green-500:   $green;
+$green-400: #0DDE5D;
+$green-300: #23F272;
+
+$yellow: #FCCC19;
+$yellow-600: #E4B503;
+$yellow-500: $yellow;
+$yellow-400: #FDD541;
+$yellow-300: #FDDE6A;
+
+$font-family-sans-serif: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-serif: 'Playfair Display', serif;
+
+$font-size-base: 1rem;
+$h1-font-size:   $font-size-base * 4;
+$h2-font-size:   $font-size-base * 2.25;
+$h3-font-size:   $font-size-base * 1.5;
+$h4-font-size:   $font-size-base * 1.5;
+$h5-font-size:   $font-size-base * 1.25;
+$h6-font-size:   $font-size-base * 1.125;
+
+$button-font-size : $font-size-base * 1.25;
+$button-line-height: 1.5;
+$button-font-weight: 500;
+
+$headings-font-family:        $font-family-serif;
+$headings-font-weight:        700;
+$headings-line-height:        1.5;
+$headings-color:              $gray-900;
+
+$input-bg: $gray-100;
+$input-color: $gray-900;
+$input-border-color: $gray-300;
+$input-padding-y: 16px;
+$input-padding-x: 15px;
+$input-font-family: $font-family-sans-serif;
+$input-font-size: $font-size-base * 0.875;
+
+// scss-docs-start display-headings
+$display-font-sizes: (
+  1: 4rem,
+  2: 2.25rem,
+  3: 1.5rem,
+  4: 1.5rem,
+  5: 1.25rem,
+  6: 1.125rem
+);
+
+$display-font-weight: 700;
+$display-line-height: $headings-line-height;
+// scss-docs-end display-headings
+
+$brand-font-family: $font-family-serif;
+$brand-font-weight: 700;
+$brand-line-height: 1.5;
+$brand-color: $gray-900;
+$navbar-brand-font-size: 1rem;
+
+$navbar-height: 72px;
+$navbar-menu-width: 70%;
+$navbar-menu-max-width: 450px;
+
+$hero-margin-top-xsm: 25px;
+$hero-margin-top-md: 100px;
+$hero-margin-bottom: 20px;
+$hero-cta-margin-top: 31px;
+$hero-cta-margin-bottom: 25px;
+
+$feature-section-margin-top: 75px;
+$feature-section-padding-bottom: 56px;
+$feature-row-margin-bottom: 24px;
+
+$feature-heading-margin-bottom: 19px;
+
+$footer-padding-bottom: 50px;
+$footer-padding-top: 50px;
+
+$section-padding-top: 100px;
+$section-padding-bottom: 100px;
+
+$lead-1-font-size: $font-size-base * 1.125;
+$lead-1-font-weight: 400;
+$lead-1-line-height: 1.5;
+
+$font-label-small-familiy: $font-family-sans-serif;
+$font-label-small-weight: 300;
+$font-label-small-size: $font-size-base * 0.875;
+$font-label-small-line-height: 1.5;
+
+$typography-quote-1-font-family: $font-family-sans-serif;
+$typography-quote-1-font-size: $font-size-base * 1.125;
+$typography-quote-1-font-weight: 300;
+$typography-quote-1-font-style: italic;
+$typography-quote-1-line-height: 1.5;
+
+$link-row-margin-top: 19px;
+
+.lead-1 {
+  font-size: $lead-1-font-size;
+  font-weight: $lead-1-font-weight;
+  line-height: $lead-1-line-height;
+}
+
+.display-4 {
+  font-family: $font-family-sans-serif;
+  font-weight: 700;
+}
+
+
+.required {
+  color: $red;
+  font-weight: 900;
+  font-size: $font-size-base * 0.75;
+  line-height: 1.5;
+  display: inline-block;
+  position: absolute;
+  margin-top: -2px;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
