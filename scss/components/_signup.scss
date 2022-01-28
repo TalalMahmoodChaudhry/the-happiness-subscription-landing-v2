@@ -19,6 +19,13 @@ $padding-cta-vertical: 70px;
         .singup-form-header {
             margin-bottom: $signup-form-header-margin-bottom;
         }
+
+        .input-group-text {
+            
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: $gray-800;
+        }
     }
 
     .cta {
@@ -26,7 +33,7 @@ $padding-cta-vertical: 70px;
         background-repeat: no-repeat;
         background-position: top right;
         background-size: cover;
-        background-color: $blue-600;
+        background-color: $blue-800;
         @include rightBorderRadiusSTD;
         padding: $padding-cta-vertical $padding-cta-horizontal;
         color: $gray-100;
@@ -34,5 +41,7 @@ $padding-cta-vertical: 70px;
         h1, h4 {
             color: inherit;
         }
+
+
     }
 }

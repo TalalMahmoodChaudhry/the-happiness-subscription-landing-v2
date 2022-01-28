@@ -1,16 +1,28 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
 
+$feature-section-padding-bottom: 56px;
+$feature-heading-margin-bottom: 50px;
+
 .feature-section {
 
-    background-image: url(../../assets/images/blue_ellipse.svg);
-    background-repeat: no-repeat;
-    background-size: 450px;
-    background-position: right 11% top 0;
     padding-bottom: $feature-section-padding-bottom;
 
     @include media-breakpoint-up(md) {
         margin-top: 496px;
+    }
+
+    .feature-image {
+
+        background-image: url(../../assets/images/blue_ellipse.svg);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: center bottom 54px;
+
+        img {
+
+            width: 300px;
+        }
     }
 
     .feature-heading {

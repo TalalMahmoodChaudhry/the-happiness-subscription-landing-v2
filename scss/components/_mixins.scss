@@ -5,7 +5,7 @@
 }
 
 @mixin darkShadow {
-    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.35);
 }
 
 @mixin buttonShadow {
@@ -13,12 +13,12 @@
 }
 
 @mixin borderRadiusSTD {
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 @mixin rightBorderRadiusSTD {
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;;
 }
 
 @mixin fontLabelSmall {

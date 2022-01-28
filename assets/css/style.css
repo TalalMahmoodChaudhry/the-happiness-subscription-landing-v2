@@ -11162,21 +11162,21 @@ textarea.form-control-lg {
   color: #fff;
 }
 
-.feature {
-  text-align: center;
-  border-radius: 3px;
-  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
-  background-color: #fff;
-  padding: 20px 20px 30px 20px;
+.feature h2 {
+  font-family: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 2.25rem;
+  line-height: 1.2em;
 }
-.feature .feature-icon {
-  font-size: 2rem;
+.feature p {
+  font-size: 1.25rem;
+  line-height: 1.5em;
+  color: #474A57;
 }
 
 .signup {
   background-color: #fff;
-  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
-  border-radius: 3px;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.35);
+  border-radius: 8px;
 }
 .signup .signup-form {
   padding: 40px 32px;
@@ -11184,14 +11184,19 @@ textarea.form-control-lg {
 .signup .signup-form .singup-form-header {
   margin-bottom: 25px;
 }
+.signup .signup-form .input-group-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #474A57;
+}
 .signup .cta {
   background-image: url(../../assets/images/cta_background.svg);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;
-  background-color: #2EA4FF;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+  background-color: #0076D1;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
   padding: 70px 60px;
   color: #F4F5F7;
 }
@@ -11203,8 +11208,8 @@ textarea.form-control-lg {
   background-color: #fff;
   padding: 67px 37px 49px 37px;
   margin-bottom: 30px;
-  border-radius: 3px;
-  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.35);
 }
 .testimonial .testimonial-text {
   font-family: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11293,10 +11298,6 @@ textarea.form-control-lg {
 }
 
 .feature-section {
-  background-image: url(../../assets/images/blue_ellipse.svg);
-  background-repeat: no-repeat;
-  background-size: 450px;
-  background-position: right 11% top 0;
   padding-bottom: 56px;
 }
 @media (min-width: 768px) {
@@ -11304,17 +11305,25 @@ textarea.form-control-lg {
     margin-top: 496px;
   }
 }
+.feature-section .feature-image {
+  background-image: url(../../assets/images/blue_ellipse.svg);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center bottom 54px;
+}
+.feature-section .feature-image img {
+  width: 300px;
+}
 .feature-section .feature-heading {
-  margin-bottom: 3.8px;
+  margin-bottom: 10px;
 }
 @media (min-width: 992px) {
   .feature-section .feature-heading {
-    margin-bottom: 19px;
+    margin-bottom: 50px;
   }
 }
 
 .cta-section {
-  background-color: rgba(174, 220, 255, 0.2);
   padding-top: 20px;
   padding-bottom: 20px;
 }
