@@ -1,8 +1,5 @@
 @use '../custom' as *;
 
-$hero-margin-bottom: 20px;
-$hero-cta-margin-top: 25px;
-$hero-cta-margin-bottom: 259px;
 
 .hero-section {
 
@@ -10,24 +7,23 @@ $hero-cta-margin-bottom: 259px;
     width: 100%;
     height: 100%;
     background-color: $blue-800;   
-    padding-bottom: $hero-margin-bottom;
-    padding-top: 80px;
+    padding-top: 100px;
     text-align: center;
 
     @include media-breakpoint-up(md) {
-        padding-top: 162px;
+        padding-top: 120px;
     }
 
     .hero-cta {
 
-        margin-top: $hero-cta-margin-top;
-        margin-bottom: $hero-cta-margin-bottom;
+        margin-top: 25px;
+        margin-bottom: 259px;
     }
 
     .product-images {
 
         position: absolute;
-        margin-top: -219px;
+        margin-top: -180px;
         padding-bottom: 100px;
         width: 100%;
         background-image: url(../../assets/images/Sun.svg); 
@@ -37,15 +33,39 @@ $hero-cta-margin-bottom: 259px;
 
     .product-img {
 
+
         &.focused {
 
             width: 300px;
             margin: 0 40px;
+
+            @include media-breakpoint-up(md) {
+
+                width: 250px;
+            }
+
+            @include media-breakpoint-up(lg) {
+
+                width: 300px;
+            }
         }
 
         &.unfocused {
 
             width: 250px;
+
+            display: none;
+
+            @include media-breakpoint-up(md) {
+
+                display: block;
+                width: 200px;
+            }
+
+            @include media-breakpoint-up(lg) {
+
+                width: 250px;
+            }
         }
     }
 
@@ -54,15 +74,22 @@ $hero-cta-margin-bottom: 259px;
     }
 
     p {
-        font-size: 1.375rem;
+        font-size: 1.125rem;
         line-height: 1.5em;
+
+        @include media-breakpoint-up(md) {
+
+            font-size: 1.375rem;
+        }
     }
 
     h1 {
 
+        margin-bottom: 35px;
+
         @include media-breakpoint-up(md) {
 
-            margin-bottom: 40px;
+            margin-bottom: 25px;
         }
     }
 }

@@ -1,15 +1,14 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
 
-$feature-section-padding-bottom: 56px;
-$feature-heading-margin-bottom: 50px;
-
 .feature-section {
 
-    padding-bottom: $feature-section-padding-bottom;
+    margin-top: 450px;
 
-    @include media-breakpoint-up(md) {
-        margin-top: 496px;
+    @include media-breakpoint-up(lg) {
+
+        padding-top: 90px;
+        margin-top: 406px;
     }
 
     .feature-image {
@@ -21,16 +20,22 @@ $feature-heading-margin-bottom: 50px;
 
         img {
 
-            width: 300px;
+            width: 250px;
+
+            @include media-breakpoint-up(md) {
+
+                width: 300px;
+            }
+            
         }
     }
 
     .feature-heading {
 
-        margin-bottom: $feature-heading-margin-bottom * 0.2;
+        margin-bottom: 35px;
 
         @include media-breakpoint-up(lg) {
-            margin-bottom: $feature-heading-margin-bottom;
+            margin-bottom: 50px;
         }
     }
 }

@@ -8,6 +8,14 @@ $quotes-h: 120px;
 
 .testimonials-section {
 
+    padding-top: 60px;
+
+    @include media-breakpoint-up(md) {
+
+        padding-top: 90px;
+    }
+
+
     .header-testimonials {
 
         padding-left: $quotes-offset-x;
