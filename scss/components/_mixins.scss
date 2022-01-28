@@ -12,6 +12,10 @@
     box-shadow: -2px 4px 45px rgba(0, 0, 0, 0.4);
 }
 
+@mixin testimonialShadow {
+    box-shadow: -2px 4px 45px rgba(0, 0, 0, 0.15);
+}
+
 @mixin borderRadiusSTD {
     border-radius: 8px;
 }
@@ -42,9 +46,21 @@
     linke-height: $typography-quote-1-line-height;
 }
 
-@mixin yellowQuotes($w, $h, $offset-x, $offset-y) {
+@mixin lightBlueQuotes($w, $h, $offset-x, $offset-y) {
     content: " ";
     background-image: url(../../assets/images/quote_mark.svg);
+    background-size: cover;
+    width: $w;
+    height: $h;
+    display: block;
+    position: absolute;
+    margin-left: $offset-x;
+    margin-top: $offset-y;
+}
+
+@mixin darkBlueQuotes($w, $h, $offset-x, $offset-y) {
+    content: " ";
+    background-image: url(../../assets/images/quote_mark_dark_blue.svg);
     background-size: cover;
     width: $w;
     height: $h;

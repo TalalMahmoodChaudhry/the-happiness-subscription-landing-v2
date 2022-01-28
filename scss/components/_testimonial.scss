@@ -16,7 +16,7 @@ $testimonial-quote-sign-offset-y: -4px;
     padding: $testimonial-padding-top $testimonial-padding-left-right $testimonial-padding-bottom $testimonial-padding-left-right;
     margin-bottom: $testimonial-margin-bottom;
     @include borderRadiusSTD;
-    @include darkShadow;
+    @include testimonialShadow;
 
     .testimonial-text {
         
@@ -24,7 +24,7 @@ $testimonial-quote-sign-offset-y: -4px;
 
         &::before {
 
-            @include yellowQuotes($testimonial-quote-sign-w, $testimonial-quote-sign-h, $testimonial-quote-sign-offset-x, $testimonial-quote-sign-offset-y);
+            @include darkBlueQuotes($testimonial-quote-sign-w, $testimonial-quote-sign-h, $testimonial-quote-sign-offset-x, $testimonial-quote-sign-offset-y);
         }
     }
 }

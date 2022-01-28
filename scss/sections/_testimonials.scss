@@ -8,15 +8,6 @@ $quotes-h: 120px;
 
 .testimonials-section {
 
-    padding-top: $section-padding-top * 0.2;
-    padding-bottom: $section-padding-bottom * 0.2;
-    background-color: rgba($yellow-300, 0.2);
-
-    @include media-breakpoint-up(md) {
-        padding-top: $section-padding-top;
-        padding-bottom: $section-padding-bottom;
-    }
-
     .header-testimonials {
 
         padding-left: $quotes-offset-x;
@@ -24,7 +15,7 @@ $quotes-h: 120px;
 
         &::before {
 
-            @include yellowQuotes($quotes-w, $quotes-h, -$quotes-offset-x, -$quotes-offset-y);
+            @include lightBlueQuotes($quotes-w, $quotes-h, -$quotes-offset-x, -$quotes-offset-y);
             z-index: -1;
         }
     }
