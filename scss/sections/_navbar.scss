@@ -6,27 +6,21 @@
         font-family: $brand-font-family;
         font-weight: $brand-font-weight;
         line-height: $brand-line-height;
-        color: $brand-color;
+        color: $gray-100;
         margin-right: 66px;
 
-
         @include media-breakpoint-up(md) {
-            font-size: $font-size-lg;
+            font-size: 1.375rem;
         }
     }
 
     .navbar-nav {
 
-        max-width: $navbar-menu-max-width;
+        margin-left: auto; 
         justify-content: space-between;
 
         .nav-link {
-            color: $gray-900;
+            color: $gray-100;
         }
-    }
-
-    li {
-        padding: 0 0.7rem;
-
     }
 }

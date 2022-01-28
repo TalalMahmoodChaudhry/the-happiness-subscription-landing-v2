@@ -48,6 +48,8 @@ $button-font-size : $font-size-base * 1.25;
 $button-line-height: 1.5;
 $button-font-weight: 500;
 
+$btn-border-radius: 8px;
+
 $headings-font-family:        $font-family-serif;
 $headings-font-weight:        700;
 $headings-line-height:        1.5;
@@ -79,17 +81,13 @@ $brand-font-family: $font-family-serif;
 $brand-font-weight: 700;
 $brand-line-height: 1.5;
 $brand-color: $gray-900;
-$navbar-brand-font-size: 1rem;
+$navbar-brand-font-size: 1.375rem;
 
 $navbar-height: 72px;
 $navbar-menu-width: 70%;
 $navbar-menu-max-width: 450px;
-
-$hero-margin-top-xsm: 25px;
-$hero-margin-top-md: 100px;
-$hero-margin-bottom: 20px;
-$hero-cta-margin-top: 31px;
-$hero-cta-margin-bottom: 25px;
+$navbar-nav-link-padding-x: 27px;
+$navbar-padding-y: 16px;
 
 $feature-section-margin-top: 75px;
 $feature-section-padding-bottom: 56px;
@@ -140,6 +138,11 @@ $link-row-margin-top: 19px;
   display: inline-block;
   position: absolute;
   margin-top: -2px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

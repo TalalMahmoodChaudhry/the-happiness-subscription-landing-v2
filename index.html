@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet"> 
 </head>
 <body>
     
     <!-- 
       Navbar 
     -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white menu">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary menu">
         <div class="container">
           <a class="navbar-brand" href="#home">The Happiness Subscription</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,9 +25,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" href="#features">What is it About?</a>
-              <a class="nav-link" href="#cta" title="Get Invited">Get Invited</a>
+              <a class="nav-link" href="#features" title="Features">Features</a>
+              <a class="nav-link" href="#cta" title="Join the Waitlist">Join the Waitlist</a>
               <a class="nav-link" href="#testimonials" title="Testimonials">Testimonials</a>
+              <a class="nav-link" href="#faq" title="FAQ">FAQ</a>
             </div>
           </div>
         </div>
@@ -37,12 +40,27 @@
     <section id="home" class="hero-section">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <h1>Improve Your Happiness. <br /> One Spending At A Time.</h1>
+          <div class="col-md-8 offset-md-2">
+            <h1>Use your money to make you happy</h1>
+          </div>
+          <div class="col-md-10 offset-md-1">
+            <p>
+              The Happiness Subscription allows you to relate your finance to your happiness. Reflect your spendings, set goals and receive recommendations by our app and industry experts.
+            </p>
+          </div>
+          <div class="col-md-4 offset-md-4">
             <a class="btn btn-arrow hero-cta" href="#cta" title="Get Happier">Get Happier Now</a>
           </div>
-          <div class="col-md-6 product-image text-center mb-5">
-            <img src="assets/images/happiness_subscription_preview.png" alt="The Happiness Subscription App Screen" class="app-img" />
+        </div>
+      </div>
+      <div class="product-images">
+        <div class="container">
+          <div class="row">
+            <div class="col d-flex align-items-center justify-content-center">
+              <img class="product-img unfocused" src="assets/images/the_happiness_subscription_product_rate_expense.png" alt="The Happiness Subscription product image - rate your happiness" />
+              <img class="product-img focused" src="assets/images/the_happiness_subscription_product_happiness_score.png" alt="The Happiness Subscription product image - your personalised happiness score" />
+              <img class="product-img unfocused" src="assets/images/the_happiness_subscription_product_connect_accounts.png" alt="The Happiness Subscriptin product image - add accounts for automatic expense import" />
+            </div>
           </div>
         </div>
       </div>

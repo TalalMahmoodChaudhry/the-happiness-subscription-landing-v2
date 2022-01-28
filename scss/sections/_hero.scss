@@ -1,19 +1,21 @@
 @use '../custom' as *;
 
+$hero-margin-bottom: 20px;
+$hero-cta-margin-top: 25px;
+$hero-cta-margin-bottom: 259px;
+
 .hero-section {
 
+    position: relative;
     width: 100%;
     height: 100%;
-    background-image: url(../../assets/images/Sun.svg);    
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: $blue-800;   
     padding-bottom: $hero-margin-bottom;
-    margin-top: $hero-margin-top-xsm;
+    padding-top: 80px;
     text-align: center;
 
     @include media-breakpoint-up(md) {
-        margin-top: $hero-margin-top-md;
-        text-align: left;
+        padding-top: 162px;
     }
 
     .hero-cta {
@@ -22,8 +24,45 @@
         margin-bottom: $hero-cta-margin-bottom;
     }
 
-    .app-img {
-        
-        width: 350px;
+    .product-images {
+
+        position: absolute;
+        margin-top: -219px;
+        padding-bottom: 100px;
+        width: 100%;
+        background-image: url(../../assets/images/Sun.svg); 
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .product-img {
+
+        &.focused {
+
+            width: 300px;
+            margin: 0 40px;
+        }
+
+        &.unfocused {
+
+            width: 250px;
+        }
+    }
+
+    h1, p {
+        color: $gray-100;
+    }
+
+    p {
+        font-size: 1.375rem;
+        line-height: 1.5em;
+    }
+
+    h1 {
+
+        @include media-breakpoint-up(md) {
+
+            margin-bottom: 40px;
+        }
     }
 }
