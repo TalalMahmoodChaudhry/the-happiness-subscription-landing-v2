@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.display-4 {
+.display-4, .display-3, .display-2 {
   font-family: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
 }
@@ -11173,10 +11173,7 @@ textarea.form-control-lg {
 
 .feature {
   text-align: center;
-  margin-bottom: 35px;
-}
-.feature:last-of-type {
-  margin-bottom: 0px;
+  margin-bottom: 70px;
 }
 @media (min-width: 768px) {
   .feature {
@@ -11186,7 +11183,7 @@ textarea.form-control-lg {
 }
 .feature h2 {
   font-family: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 1.2em;
 }
 @media (min-width: 768px) {
@@ -11441,11 +11438,23 @@ textarea.form-control-lg {
 
 .faq-section {
   padding-top: 60px;
+  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   .faq-section {
     padding-top: 90px;
   }
+}
+.faq-section article {
+  margin-bottom: 50px;
+}
+.faq-section article h3 {
+  color: #18191F;
+}
+.faq-section article p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #474A57;
 }
 
 .footer-section {
