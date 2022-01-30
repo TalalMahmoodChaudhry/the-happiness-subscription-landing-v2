@@ -11207,7 +11207,7 @@ textarea.form-control-lg {
 
 .signup {
   background-color: #fff;
-  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.35);
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.25);
   border-radius: 8px;
 }
 .signup .signup-form {
@@ -11241,7 +11241,7 @@ textarea.form-control-lg {
   padding: 67px 37px 49px 37px;
   margin-bottom: 30px;
   border-radius: 8px;
-  box-shadow: -2px 4px 45px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.25);
 }
 .testimonial .testimonial-text {
   font-family: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11376,6 +11376,7 @@ textarea.form-control-lg {
 }
 .feature-section .feature-image img {
   width: 250px;
+  box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.25);
 }
 @media (min-width: 768px) {
   .feature-section .feature-image img {

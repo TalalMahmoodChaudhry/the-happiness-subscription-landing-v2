@@ -16,7 +16,7 @@ $testimonial-quote-sign-offset-y: -4px;
     padding: $testimonial-padding-top $testimonial-padding-left-right $testimonial-padding-bottom $testimonial-padding-left-right;
     margin-bottom: $testimonial-margin-bottom;
     @include borderRadiusSTD;
-    @include testimonialShadow;
+    @include darkShadow;
 
     .testimonial-text {
         
